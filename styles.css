@@ -1,0 +1,130 @@
+/* Global styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fce4ec; /* สีชมพูอ่อน */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background-color: #f06292;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    border-bottom: 2px solid #f8bbd0;
+}
+
+header .profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Gallery section */
+#gallery {
+    margin: 40px 0;
+}
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.gallery-slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 10px;
+    transform: translateY(-50%);
+}
+
+.next {
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+/* About section */
+#about {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #ec407a;
+}
+
+/* Contact section */
+#contact {
+    background-color: #fff;
+    padding: 40px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+#contact a {
+    color: #f06292;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1em;
+    padding: 20px;
+    background-color: #f06292;
+    color: white;
+    margin-top: 40px;
+}
